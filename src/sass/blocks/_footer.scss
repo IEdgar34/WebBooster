@@ -32,8 +32,10 @@
     }
     .header__menu {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
+        @include tablet-big() {
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
     }
 }
