@@ -1,0 +1,54 @@
+@mixin fluid-text($min: 16px, $max: 69px) {
+  font-size: clamp(#{$min}, calc(69 / 1920 * 100vw), #{$max});
+}
+
+@mixin hover() {
+  @media (hover: hover) {
+    @content;
+  }
+  @media (hover: none) {
+    @content;
+  }
+}
+
+
+//меди завпросы для адаптива
+@mixin desctop-big() {
+  @media (max-width: 1800px) {
+      @content;
+  }
+}
+@mixin desctop-medium() {
+  @media (max-width: 1440px) {
+      @content;
+  }
+}
+
+@mixin desctop-small() {
+  @media (max-width: 1024px) {
+      @content;
+  }
+}
+
+@mixin tablet-big() {
+  @media (max-width: 768px) {
+      @content;
+  }
+}
+
+@mixin mobile-big() {
+  @media (max-width: 425px) {
+      @content;
+  }
+}
+
+@mixin mobile-medium() {
+  @media (max-width: 375px) {
+      @content;
+  }
+}
+@mixin mobile-small() {
+  @media (max-width: 320px) {
+      @content;
+  }
+}

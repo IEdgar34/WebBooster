@@ -1,0 +1,69 @@
+.about {
+    font-family: "Futura LT", sans-serif;
+    width: 100%;
+    min-height: 1219px;
+    padding-top: 85px;
+    &__title {
+        padding-bottom: 25px;
+        text-align: center;
+        font-size: 45px;
+        font-weight: 700;
+        @include tablet-big() {
+            font-size: 35px;
+        }
+    }
+    &__subtitle {
+        padding-bottom: 42px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 22px;
+        @include tablet-big() {
+            font-size: 18px;
+        }
+    }
+    &__card-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 43px;
+        row-gap: 32px;
+        @include desctop-medium() {
+            justify-content: center;
+        }
+    }
+    &__card {
+        position: relative;
+        width: 369px;
+        height: 406px;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 0 10px;
+        @include tablet-big() {
+            width: 349px;
+            height: 386px;
+        }
+        &-img {
+            display: block;
+            margin: 0 auto;
+            margin-top: 25px;
+            margin-bottom: 40px;
+        }
+        &-title {
+            margin-bottom: 14px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 20px;
+            color: rgb(42, 51, 108);
+        }
+        &-subtitle {
+            text-align: center;
+            font-weight: 400;
+            font-size: 20px;
+            color: rgb(85, 85, 85);
+        }
+        &-bg {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}

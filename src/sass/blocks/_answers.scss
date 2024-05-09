@@ -1,0 +1,54 @@
+.answers {
+    font-family: "Futura LT", sans-serif;
+    width: 100%;
+    min-height: 1250px;
+    background: url("../images/footerbg.png");
+    background-repeat: no-repeat;
+
+    &__title {
+        padding-top: 131px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 45px;
+        color: rgb(255, 255, 255);
+        @include tablet-big() {
+            font-size: 35px;
+        }
+    }
+    &__wrap {
+        margin-top: 53px;
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+    }
+    &__item {
+        width: 100%;
+        height: 87px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 30px 53px;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 28px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 50px -10px rgba(22, 126, 194, 0.2);
+        background: linear-gradient(180deg, rgb(255, 255, 255) 50.575%, rgb(189, 192, 255) 100%);
+        img {
+            position: absolute;
+            right: 3%;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+        @include tablet-big() {
+            font-size: 18px;
+        }
+        @include mobile-big() {
+            padding-left: 20px;
+            height: 67px;
+            font-size: 16px;
+            line-height: 18px;
+        }
+    }
+}

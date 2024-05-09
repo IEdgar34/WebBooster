@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "FuturaFuturisC", sans-serif;
+  src: url("../fonts/futurafuturis/FuturaFuturisC.eot");
+  src:
+    local("FuturaFuturisC"),
+    url("../fonts/futurafuturis/FuturaFuturisC.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/futurafuturis/FuturaFuturisC.woff2") format("woff2"),
+    url("../fonts/futurafuturis/FuturaFuturisC.woff") format("woff"),
+    url("../fonts/futurafuturis/FuturaFuturisC.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura LT", sans-serif;
+  src: url("../fonts/futura/FuturaLT.eot");
+  src:
+    local("Futura LT Medium"),
+    local("FuturaLT"),
+    url("../fonts/futura/FuturaLT.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/futura/FuturaLT.woff2") format("woff2"),
+    url("../fonts/futura/FuturaLT.woff") format("woff"),
+    url("../fonts/futura/FuturaLT.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

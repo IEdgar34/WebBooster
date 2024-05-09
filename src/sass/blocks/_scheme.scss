@@ -1,0 +1,171 @@
+.scheme {
+    position: relative;
+    top: 58px;
+    font-family: "Futura LT", sans-serif;
+    width: 100%;
+    min-height: 1098px;
+    padding: 135px 0 154px 0;
+    background: url("../images/schemebg.png") no-repeat 100% 100%;
+    background-position: 0 55px;
+    background-repeat: no-repeat;
+    &__card-inner {
+        display: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+        column-gap: 10px;
+        &_item {
+            position: relative;
+            width: 441px;
+            height: 268px;
+            border-radius: 10px;
+            padding: 10px;
+            background: linear-gradient(90deg, #0501aa 0%, #48abe0 100%);
+            &-number {
+                position: absolute;
+                top: 10%;
+                left: 10%;
+                color: rgb(150, 154, 247);
+                font-weight: 700;
+                font-size: 36px;
+                @include mobile-big() {
+                    font-size: 26px;
+                }
+            }
+            &-title {
+                margin-bottom: 40px;
+                color: rgb(255, 255, 255);
+                font-weight: 700;
+                font-size: 20px;
+                text-transform: uppercase;
+                @include mobile-big() {
+                    font-size: 18px;
+                }
+            }
+            &-subtitle {
+                color: rgb(255, 255, 255);
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 25px;
+                @include mobile-big() {
+                    font-size: 14px;
+                }
+            }
+            div {
+                margin-top: 24px;
+                margin-left: 100px;
+                @include mobile-big() {
+                    margin-left: 60px;
+                }
+            }
+        }
+        @include desctop-medium() {
+            display: flex;
+        }
+    }
+    &__title {
+        margin-bottom: 24px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 45px;
+        @include tablet-big() {
+            font-size: 35px;
+        }
+    }
+    &__subtitle {
+        margin-bottom: 46px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 22px;
+        @include tablet-big() {
+            font-size: 18px;
+        }
+    }
+    &__card-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 10px;
+        @include desctop-medium() {
+            display: none;
+        }
+        img {
+            background-color: black;
+        }
+        div {
+            display: flex;
+        }
+        @include desctop-medium() {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            div {
+                width: 413px;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                @include tablet-big() {
+                    width: 300px;
+                }
+                &:nth-child(2) {
+                    flex-direction: column-reverse;
+                }
+            }
+        }
+    }
+    &__card {
+        position: relative;
+        flex-shrink: 0;
+        width: 443px;
+        height: 299px;
+        border-radius: 10px;
+        @include desctop-medium() {
+            width: 200px;
+        }
+
+        &-first {
+            background: url("../images/schemefirst.png") no-repeat;
+        }
+        &-second {
+            background: url("../images/schemesecond.png") no-repeat;
+        }
+        &-third {
+            background: url("../images/schemethirth.png") no-repeat;
+        }
+        &-fourth {
+            background: url("../images/schemesixth.png") no-repeat;
+        }
+        &-fifth {
+            background: url("../images/schemefifth.png") no-repeat;
+        }
+        &-sixth {
+            width: 413px;
+            background: url("../images/schemefourth.png") no-repeat;
+        }
+        &-title {
+            margin-top: 48px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            font-weight: 700;
+            font-size: 18px;
+        }
+    }
+    &__btn {
+        display: block;
+        width: 300px;
+        height: 56px;
+        margin: 0 auto;
+        margin-top: 40px;
+        border-radius: 10px;
+        background: orange;
+        border: none;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 19px;
+        cursor: pointer;
+        @include mobile-big() {
+            width: 260px;
+        }
+    }
+}
