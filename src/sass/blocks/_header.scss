@@ -8,8 +8,9 @@
     top: 54px;
     font-family: "Futura LT", sans-serif;
     @include desctop-medium() {
-        justify-content: space-around;
+        justify-content: space-between;
         width: 100%;
+        /* width: 990px; */
     }
     &__logo {
         width: 155px;
@@ -18,16 +19,7 @@
             width: 135px;
         }
     }
-    @include desctop-small() {
-        width: 700px;
-        justify-content: space-between;
-    }
-    @include tablet-big() {
-        width: 350px;
-    }
-    @include mobile-big() {
-        width: 260px;
-    }
+
     &__menu {
         width: 801px;
         display: flex;
@@ -59,6 +51,9 @@
                     display: none;
                 }
             }
+        }
+        @include desctop-medium() {
+            margin-right: 40px;
         }
     }
     &__form {
